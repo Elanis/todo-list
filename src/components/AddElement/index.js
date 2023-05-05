@@ -2,6 +2,8 @@ import { useState } from 'react';
 
 import useAddElementToList from '../../hooks/useAddElementToList';
 
+import './index.css';
+
 export default function AddElement() {
 	const addElementToList = useAddElementToList();
 	const [inputVal, setInputVal] = useState('');
@@ -22,6 +24,7 @@ export default function AddElement() {
 	return (
 		<>
 			<input 
+				className="add-btn"
 				type="text"
 				value={inputVal}
 				onChange={handleInputValChange}

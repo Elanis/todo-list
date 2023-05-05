@@ -1,0 +1,11 @@
+.list-item span {
+	display: inline-block;
+	width: 300px;
+}
+
+.delete-button {
+	margin-left: 1rem;
+
+	background: transparent;
+	border: 1px solid #222222;
+}
