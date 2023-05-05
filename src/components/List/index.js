@@ -1,3 +1,5 @@
+import ListElement from '../ListElement';
+
 import useList from '../../hooks/useList';
 
 export default function List() {
@@ -5,7 +7,7 @@ export default function List() {
 
 	return (
 		<ul>
-			{list.map((x, i) => <li key={i}>{x}</li>)}
+			{list.map((x, i) => <ListElement value={x} key={i} />)}
 		</ul>
 	);
 }
