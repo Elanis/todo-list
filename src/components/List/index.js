@@ -7,7 +7,7 @@ export default function List() {
 
 	return (
 		<ul>
-			{list.map((x, i) => <ListElement value={x} key={i} />)}
+			{list.map((x, i) => <ListElement index={i} value={x} key={i} />)}
 		</ul>
 	);
 }
